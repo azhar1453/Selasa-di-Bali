@@ -166,15 +166,17 @@
             <p class="text-2xl font-bold text-rustic-90">Rp. 245.000</p>
             <!-- Order Options -->
             <p class="text-sm">Choose where you want to order:</p>
-            <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-2 gap-2 order-options">
               <button
                 class="flex items-center justify-center gap-2 border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('order-options', this)"
               >
                 <img src="./icon/shopee.png" alt="Shopee" class="w-5 h-5" />
                 Shopee
               </button>
               <button
                 class="flex items-center justify-center gap-2 border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('order-options', this)"
               >
                 <img
                   src="./icon/tokopedia.png"
@@ -188,9 +190,10 @@
             <p class="text-sm">Or stay on site:</p>
             <!-- Color Options -->
             <p class="text-sm">Choose Color:</p>
-            <div class="flex gap-2">
+            <div class="flex gap-2 color-options">
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('color-options', this)"
               >
                 <img
                   src="./icon/warna 2.png"
@@ -200,6 +203,7 @@
               </button>
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('color-options', this)"
               >
                 <img
                   src="./icon/warna 1.png"
@@ -209,6 +213,7 @@
               </button>
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('color-options', this)"
               >
                 <img
                   src="./icon/warna 3.png"
@@ -218,6 +223,7 @@
               </button>
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('color-options', this)"
               >
                 <img
                   src="./icon/warna 4.png"
@@ -227,6 +233,7 @@
               </button>
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('color-options', this)"
               >
                 <img
                   src="./icon/warna 5.png"
@@ -237,42 +244,58 @@
             </div>
             <!-- Size Options -->
             <p class="text-sm">Size:</p>
-            <div class="flex gap-2">
+            <div class="flex gap-2 size-options">
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('size-options', this)"
               >
                 S
               </button>
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('size-options', this)"
               >
                 M
               </button>
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('size-options', this)"
               >
                 L
               </button>
               <button
                 class="border border-mamba-70 p-2 rounded-lg hover:bg-mamba-50 hover:text-white active:bg-mamba-70 focus:outline-none focus:ring focus:ring-mamba-80"
+                onclick="toggleActiveButton('size-options', this)"
               >
                 XL
               </button>
             </div>
             <!-- Add to Cart -->
             <div class="flex items-center gap-4">
-              <button class="flex-1 bg-rustic-60 text-white py-2 rounded-lg">
+              <button
+                class="flex-1 bg-rustic-60 text-white py-2 rounded-lg shadow-md hover:bg-rustic-90"
+              >
                 Add to Cart
               </button>
               <div class="flex items-center gap-2">
-                <button class="border border-mamba-70 px-2 rounded">-</button>
-                <span>1</span>
-                <button class="border border-mamba-70 px-2 rounded">+</button>
+                <button
+                  class="border border-mamba-70 px-2 rounded"
+                  onclick="decreaseQuantity()"
+                >
+                  -
+                </button>
+                <span id="quantity">1</span>
+                <button
+                  class="border border-mamba-70 px-2 rounded"
+                  onclick="increaseQuantity()"
+                >
+                  +
+                </button>
               </div>
             </div>
             <!-- Checkout Now -->
             <button
-              class="w-full bg-rustic-60 focus: text-white py-3 rounded-lg"
+              class="w-full bg-rustic-60 focus: text-white py-3 rounded-lg shadow-md hover:bg-rustic-90"
             >
               Checkout Now
             </button>
@@ -293,16 +316,20 @@
               <span>Description</span>
               <img
                 id="icon-dropdown1"
-                src="/path/to/icon-chevron-down.svg"
+                src="./icon/chevron-down.png"
                 alt="Expand"
                 class="w-4 h-4"
               />
             </button>
             <div id="dropdown1" class="hidden px-4 py-2 text-sm">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                quis lorem ut libero malesuada feugiat. Proin eget tortor risus.
-                Vivamus suscipit tortor eget felis porttitor volutpat.
+                Kemeja SELASA DI BALI, dengan tekstur super lembut & dingin.
+                Kalian bakal kaget banget dengan segimana flowy nya bahan linen
+                dari kemeja ini! WORTH IT BANGET! Dengan warna natural yang
+                netral, bikin kemeja ini gampang di mix n match sama celana
+                warna / bahan apapun, buat kamu makin tambah kece di acara
+                apapun! Bahan : Linen Tencel Warna : Natural Size : S / M / L /
+                XL Chat admin untuk cek stok sebelum check out ya 🙏🏻😊
               </p>
             </div>
           </div>
@@ -316,17 +343,14 @@
               <span>Additional Information</span>
               <img
                 id="icon-dropdown2"
-                src="/path/to/icon-chevron-down.svg"
+                src="./icon/chevron-down.png"
                 alt="Expand"
                 class="w-4 h-4"
               />
             </button>
             <div id="dropdown2" class="hidden px-4 py-2 text-sm">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                porttitor lectus nibh. Curabitur aliquet quam id dui posuere
-                blandit. Donec sollicitudin molestie malesuada.
-              </p>
+              <img src="./img/Asset 1.png" alt="" class="w-auto" />
+              <img src="./img/Asset 2.png" alt="" class="mt-10 w-auto" />
             </div>
           </div>
         </div>
@@ -620,6 +644,12 @@
       </div>
     </footer>
     <script>
+      function toggleActiveButton(section, button) {
+        const buttons = document.querySelectorAll(`.${section} button`);
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+      }
+
       function changeImage(thumbnail) {
         const mainImage = document.getElementById("main-image");
         mainImage.src = thumbnail.src;
@@ -630,10 +660,23 @@
 
         if (dropdown.classList.contains("hidden")) {
           dropdown.classList.remove("hidden");
-          icon.src = "/path/to/icon-chevron-up.svg"; // Change to up icon
+          icon.src = "./icon/chevron-up.png"; // Change to up icon
         } else {
           dropdown.classList.add("hidden");
-          icon.src = "/path/to/icon-chevron-down.svg"; // Change to down icon
+          icon.src = "./icon/chevron-down.png"; // Change to down icon
+        }
+      }
+      function increaseQuantity() {
+        const quantityElement = document.getElementById("quantity");
+        let quantity = parseInt(quantityElement.textContent);
+        quantityElement.textContent = quantity + 1;
+      }
+
+      function decreaseQuantity() {
+        const quantityElement = document.getElementById("quantity");
+        let quantity = parseInt(quantityElement.textContent);
+        if (quantity > 1) {
+          quantityElement.textContent = quantity - 1;
         }
       }
     </script>
