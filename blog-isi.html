@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selasa di Bali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              kaisei: ['"Kaisei Tokumin"', "serif"], // Custom font for headings
+              urban: ['"Urbanist"', "sans-serif"], // Default body font
+            },
+            colors: {
+              transparent: "transparent",
+              current: "currentColor",
+              white: "#ffffff",
+              cream: {
+                10: "#FDFBF6",
+                70: "#CDC6AF",
+                80: "#A49E8C",
+                90: "#7B7769",
+              },
+              rustic: {
+                60: "#A26644",
+                90: "#513322",
+              },
+              mamba: {
+                50: "#9A9682",
+                70: "#6F6C57",
+                80: "#595646",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Urbanist"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-mamba-70 text-white">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <!-- Logo -->
+        <img src="./img/Logo Selasa di Bali White.png" alt="" class="h-10" />
+
+        <!-- Menu -->
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li>
+            <a href="index.html" class="hover:text-gray-200 font-urban">Home</a>
+          </li>
+          <li>
+            <a href="all-product.html" class="hover:text-gray-200 font-urban"
+              >All Product</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" class="hover:text-gray-200 font-urban">Blog</a>
+          </li>
+          <li>
+            <a href="about-us.html" class="hover:text-gray-200 font-urban"
+              >About Us</a
+            >
+          </li>
+        </ul>
+
+        <!-- Right Buttons -->
+        <div class="flex items-center space-x-4 font-urban">
+          <button
+            class="flex items-center px-4 py-2 border border-white text-white font-medium rounded"
+          >
+            <span class="material-icons">
+              <img
+                src="./icon/currency-dollar.png"
+                alt="currency-dollar"
+                class="mr-1"
+            /></span>
+            IDR | Indonesia
+          </button>
+          <button>
+            <span class="material-icons"
+              ><img src="./icon/shopping-bag.png" alt=""
+            /></span>
+          </button>
+          <button>
+            <span class="material-icons"
+              ><img src="./icon/user.png" alt=""
+            /></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="w-full py-10 px-4 md:px-10 bg-white">
+      <!-- Breadcrumbs -->
+      <nav class="text-sm text-gray-500 mb-4">
+        <a href="index.html" class="hover:underline">Home</a> /
+        <a href="blog.html" class="hover:underline">Blog</a> /
+        <span class="font-semibold text-gray-700"
+          >5 Things You Need to Know About Linen</span
+        >
+      </nav>
+
+      <!-- Header Section -->
+      <div class="mb-6 justify-center md:w-2/4 item center">
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+          5 Things You Need to Know About Linen
+        </h1>
+        <!-- Subheading -->
+        <p class="text-gray-500 mt-2 text-sm md:text-base">October 29, 2024</p>
+      </div>
+
+      <!-- Main Image Section -->
+      <div class="w-full grid grid-cols-1 gap-2 mb-6 justify-center">
+        <img
+          src="./img/blogisi 1.png"
+          alt="Linen Image 1"
+          class="h-96 object-cover rounded-md"
+        />
+      </div>
+
+      <!-- Blog Content -->
+      <div class="text-gray-700 leading-relaxed justify-center md:w-2/4">
+        <p class="mb-4">
+          Linen has been a go-to fabric for centuries, admired for its
+          breathability, durability, and natural charm. Whether you’re new to
+          linen or have worn it for years, here are five key things you should
+          know about this timeless fabric:
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">
+          1. It’s One of the Oldest Fabrics in the World
+        </h3>
+        <p class="mb-4">
+          Linen’s history dates back thousands of years. Ancient Egyptians
+          valued it for its purity and used it in their most sacred rituals,
+          including mummification. Some of the earliest linen clothing fragments
+          were discovered in prehistoric caves, proving that linen has been used
+          for both practical and ceremonial purposes for millennia. Owning a
+          piece of linen clothing is like holding a piece of history. It’s one
+          of the most durable natural fabrics, and it gets better with time.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">
+          2. Linen is Extremely Breathable
+        </h3>
+        <p class="mb-4">
+          New linen fabric may feel stiff, but don’t let that deter you! One of
+          linen’s magical qualities is that it softens the more it’s worn and
+          washed. Over time, the fibers relax and become incredibly smooth and
+          soft to the touch, making your linen clothing even more enjoyable.
+          Linen gets better with age, so your favorite linen shirt or pants will
+          feel better and fit more naturally the more you wear them.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">3. It Softens with Time</h3>
+        <p class="mb-4">
+          New linen fabric may feel stiff, but don’t let that deter you! One of
+          linen’s magical qualities is that it softens the more it’s worn and
+          washed. Over time, the fibers relax and become incredibly smooth and
+          soft to the touch, making your linen clothing even more enjoyable.
+          Linen gets better with age, so your favorite linen shirt or pants will
+          feel better and fit more naturally the more you wear them.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">
+          4. It’s Environmentally Friendly
+        </h3>
+        <p class="mb-4">
+          Linen is one of the most sustainable fabrics you can choose. The flax
+          plant requires minimal water and pesticides compared to cotton, and
+          every part of the plant can be used, resulting in less waste. Plus,
+          linen is biodegradable, which means when your linen clothes eventually
+          wear out, they won’t sit in a landfill for centuries. Choosing linen
+          means making an environmentally conscious decision that supports
+          sustainability in fashion.
+        </p>
+
+        <h3 class="font-semibold mt-4 mb-2">
+          5. Linen is Wrinkle-Prone—And That’s Okay!
+        </h3>
+        <p class="mb-4">
+          Linen is known for its natural texture, which includes wrinkles. While
+          some people view this as a downside, the wrinkles give linen its charm
+          and casual, lived-in look. You can iron it if you prefer a crisp
+          appearance, but many embrace the relaxed aesthetic that comes with the
+          fabric’s crinkles. Embrace the effortless elegance of linen. The
+          wrinkles are part of its character, making it perfect for casual, chic
+          outfits.
+        </p>
+
+        <p>
+          Whether you're looking for resort wear and men's linen wear or want to
+          add sustainable pieces to your wardrobe, linen is a versatile,
+          breathable, and environmentally friendly fabric that deserves a
+          place in your closet, you can visit and buy premium linen products
+          from Selasa di Bali.
+        </p>
+      </div>
+
+      <!-- Additional Images -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+        <img
+          src="./img/blogisi 2.png"
+          alt="Additional Linen 1"
+          class="w-full object-cover rounded-md"
+        />
+        <img
+          src="./img/blogisi 3.png"
+          alt="Additional Linen 2"
+          class="w-full object-cover rounded-md"
+        />
+        <img
+          src="./img/blogisi 4.png"
+          alt="Additional Linen 3"
+          class="w-full object-cover rounded-md"
+        />
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="h-px w-full bg-white mb-4"></div>
+      <div class="container mx-auto px-6 lg:px-16">
+        <!-- Blog Cards -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-x-4 lg:gap-x-10 px-6 sm:px-4 lg:px-5 items-center"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 ease-out hover:scale-105"
+          >
+            <img
+              src="./img/b1.png"
+              alt="Best Clothing Materials"
+              class="w-full h-60 object-cover"
+            />
+            <div class="p-6 text-center">
+              <h3 class="font-semibold font-kaisei text-lg text-gray-800">
+                Best Clothing Materials for Summer: Stay Cool and Stylish
+              </h3>
+              <p class="font-urban text-gray-500 mt-2">November 19, 2024</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 ease-out hover:scale-105"
+          >
+            <img
+              src="./img/b2.png"
+              alt="Discover Bali"
+              class="w-full h-60 object-cover"
+            />
+            <div class="p-6 text-center">
+              <h3 class="font-semibold font-kaisei text-lg text-gray-800">
+                Discover the Enchantment of Bali: A Comprehensive 2-Week Travel
+                Guide
+              </h3>
+              <p class="font-urban text-gray-500 mt-2">October 28, 2023</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 ease-out hover:scale-105"
+          >
+            <img
+              src="./img/b3.png"
+              alt="Connecting Cultures"
+              class="w-full h-60 object-cover"
+            />
+            <div class="p-6 text-center">
+              <h3 class="font-semibold font-kaisei text-lg text-gray-800">
+                Connecting Cultures: Selasa Di Bali's Website Opens Doors for
+                Customers Worldwide
+              </h3>
+              <p class="font-urban text-gray-500 mt-2">June 6, 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="flex justify-between bg-mamba-70 text-white py-16 px-8">
+      <div class="sm:flex-row justify-between items-center ml-3">
+        <!-- Section 1: Company Info -->
+        <div>
+          <img
+            src="./img/Logo Selasa di Bali White.png"
+            alt=""
+            class="h-11 mb-4"
+          />
+          <p class="text-lg font-urban">Bali, Indonesia</p>
+        </div>
+        <div class="flex flex-row gap-56 mt-20">
+          <!-- Section 2: Menu Links -->
+          <div class="">
+            <h3 class="text-xl font-kaisei font-semibold mb-4">Menu</h3>
+            <div class="h-px w-full bg-white mb-4"></div>
+            <ul class="space-y-2 text-sm font-urban">
+              <li>
+                <a href="product.html" class="hover:underline">Products</a>
+              </li>
+              <li>
+                <a href="all-product.html" class="hover:underline"
+                  >Collections</a
+                >
+              </li>
+              <li><a href="blog.html" class="hover:underline">Blog</a></li>
+              <li><a href="index.html" class="hover:underline">Location</a></li>
+            </ul>
+          </div>
+          <!-- Section 3: Collections -->
+          <div>
+            <h3 class="text-xl font-kaisei font-semibold mb-4">Collections</h3>
+            <div class="h-px w-full bg-white mb-4"></div>
+            <ul class="space-y-2 text-sm font-urban">
+              <li><a href="#" class="hover:underline">Mens Linen Wear</a></li>
+              <li><a href="#" class="hover:underline">Ethnic Series</a></li>
+              <li><a href="#" class="hover:underline">Premium Series</a></li>
+              <li><a href="#" class="hover:underline">Wayang Series</a></li>
+            </ul>
+          </div>
+          <!-- Section 4: Help Center -->
+          <div>
+            <h3 class="text-xl font-kaisei font-semibold mb-4">Help Center</h3>
+            <div class="h-px w-full bg-white mb-4"></div>
+            <ul class="space-y-2 text-sm font-urban">
+              <li>
+                <a href="#" class="hover:underline">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="hover:underline">Refund Policy</a></li>
+              <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+              <li>
+                <a href="#" class="hover:underline">Shipping International</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Section 5: Company -->
+          <div>
+            <h3 class="text-xl font-kaisei font-semibold mb-4">Company</h3>
+            <div class="h-px w-full bg-white mb-4"></div>
+            <ul class="space-y-2 text-sm font-urban">
+              <li>
+                <a href="about-us.html" class="hover:underline">About Us</a>
+              </li>
+              <li>
+                <a href="about-us.html" class="hover:underline"
+                  >Product Overview</a
+                >
+              </li>
+              <li>
+                <a href="about-us.html" class="hover:underline"
+                  >Meet the Founders</a
+                >
+              </li>
+              <li><a href="about-us.html" class="hover:underline">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:flex-row justify-between items-center mr-3">
+        <!-- Contact Info -->
+        <div class="mb-8 sm:mb-0">
+          <h2 class="text-xl font-bold mb-2 font-kaisei">Contact Inquiries</h2>
+          <div class="h-px w-full bg-white mb-4"></div>
+          <p class="font-urban">
+            Email:
+            <a href="mailto:bintang@selasadibali.com" class="hover:underline"
+              >bintang@selasadibali.com</a
+            >
+          </p>
+          <p class="font-urban">
+            WhatsApp/Telegram:
+            <a href="tel:+62811225108" class="hover:underline">+62811225108</a>
+          </p>
+          <div class="flex gap-4 mt-4">
+            <a href="https://wa.me/62811225108">
+              <img
+                src="./icon/wa.png"
+                alt="Icon"
+                class="w-8 h-8 object-cover"
+              />
+            </a>
+            <i class="bi bi-0-square"></i>
+            <a href="https://www.instagram.com/selasadibali" target="_blank">
+              <img
+                src="./icon/ig.png"
+                alt="Instagram"
+                class="w-8 h-8 object-cover"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Payment Methods -->
+        <div class="gap-56 mt-20">
+          <h3 class="text-xl font-kaisei font-semibold mb-4">Payment Method</h3>
+          <div class="h-px w-full bg-white mb-4"></div>
+          <div class="flex gap-4">
+            <img
+              src="./icon/mandiri.png"
+              alt="Payment Method"
+              class="w-24 h-6 object-cover"
+            />
+            <img
+              src="./icon/paypal.png"
+              alt="Payment Method"
+              class="w-16 h-6 object-cover"
+            />
+          </div>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <h4 class="font-semibold font-urban">You can also order via:</h4>
+            <div class="flex gap-4">
+              <img
+                src="./icon/shopee.png"
+                alt="Order via"
+                class="h-8 object-cover"
+              />
+              <img
+                src="./icon/tokopedia.png"
+                alt="Order via"
+                class="h-8 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
